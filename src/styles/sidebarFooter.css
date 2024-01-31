@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+}
+
+body {
+    font-family: var(--font-dm-sans);
+    background: var(--color-full-black)
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebarNavigation {
+    padding: 16px 0 0 16px;
+
+    background-color: var(--color-medium-black);
+    border-radius: 8px;
+}
+
+.sidebarNavigation .logo{
+    display: flex;
+
+    padding: 16px 0 0 16px;
+
+    background-color: var(--color-medium-black);
+    border: 8px;
+    
+    cursor: pointer;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar ul li {
+    padding: 10px 0px;
+}
+
+.sidebar nav ul li a{
+    color: var( --color-cream);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding: 4px 8px;
+    margin-top: 10px;
+    
+    color: var( --color-cream);
+    font-weight: 600;
+    font-size: 14px;
+
+    background-color: var(--color-medium-black);
+    border-radius: 8px;
+}
+
+.library .libraryContent {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.library .libraryButton {
+    display: flex;
+    margin-right: 10px;
+    padding: 20px 10px;
+
+    color:  var(--color-cream);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+
+    background-color: transparent;
+    border: 0px;
+}
+
+.library .libraryButton .fa-solid{
+    margin-right: 10px;
+    padding-right: 8px;
+
+    color: var( --color-cream);
+    font-size: 20px;
+    /* font-weight: 300; > está corrompendo o icone*/
+
+}
+
+.library .libraryContent .fa-plus {
+    margin: 24px 10px;
+}
+
+.sectionPlaylist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin: 8px 0;
+    padding: 16px 20px;
+
+    color: var( --color-cream);
+    font-weight: 600;
+    font-size: 14px;
+
+    background-color: var(--color-low-black);
+    border-radius: 10px;
+
+}
+
+.sectionPlaylist .sectionPlaylistContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionPlaylistContent .text{
+    /* O código fornecido não estava deixando um item em cima do outro então tive que resolver a minha maneira. */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    color: var(--color-white);
+}
+
+.sectionPlaylistContent .title {
+    font-weight: 700;
+
+}
+
+.sectionPlaylistContent .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.sectionPlaylistContent .sectionPlaylistButton {
+    display: flex;
+    justify-content: center;
+
+    width: 113px;
+    margin-top: 12px;
+    padding: 10px;
+    
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: 0;
+
+    color: var(--color-full-black);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+
+    cursor: pointer;
+}
+
+.sidebar .cookies {
+    margin: 25px 20px;
+
+}
+
+.sidebar .cookies a {
+    color: var( --color-cream);
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.sidebar .cookies a:hover {
+    text-decoration: underline;
+}
+
+.languages .languagesButton {
+    color: var(--color-white);
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 1px solid var(--color-strong-cream);
+    border-radius: 20px;
+
+    align-items: center;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.disclaimerPremium {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    
+    padding: 15px 40px;
+    width: 100%;
+}
+
+.disclaimerPremium .text{
+    flex-shrink: 0;
+}
+
+.disclaimerPremium .disclaimerPremiumTitle{
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    
+    margin-bottom: 10px;
+}
+
+.disclaimerPremium .disclaimerPremiumSubtitle {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footerButton button{
+    padding: 14px 30px;
+
+    cursor: pointer;
+    border: 0px;
+    border-radius: 40px;
+    background-color: var(--color-white);
+    flex-shrink: 0;
+
+    font-size: 16px;
+    font-weight: bold;
+}
